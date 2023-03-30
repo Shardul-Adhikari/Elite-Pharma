@@ -1,6 +1,6 @@
 <template>
   <section>
-    <nav class="navbar navbar-expand-lg" style="background-image: linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% )">
+    <nav class="navbar navbar-expand-lg" >
       <div class="container">
         <button
           class="navbar-toggler"
