@@ -19,40 +19,40 @@
         data-bs-slide-to="1"
         aria-label="Slide 2"
       ></button>
-      <!-- <button
+     <button
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide-to="2"
         aria-label="Slide 3"
-      ></button>
+      ></button> 
       <button
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide-to="3"
         aria-label="Slide 4"
-      ></button> -->
+      ></button> 
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <!-- <img
-          src="~\src\assets\NIKO-TAB.jpg"
+        <img
+          src="/assets/carousel 1.png"
           class="d-block w-100"
           alt="First Slide"
-        /> -->
+        />
       </div>
       <div class="carousel-item">
-        <!-- <img
-          src="~\src\assets\onlinelogomaker-032823-2139-0736.png"
+        <img
+          src="/assets/carousel 2.png"
           class="d-block w-100"
           alt="Second Slide"
-        /> -->
+        />
       </div>
       <div class="carousel-item">
-        <!-- <img
-          src="~\src\assets\onlinelogomaker-032823-2139-0736.png"
+        <img
+          src="/assets/carousel 3.png"
           class="d-block w-100"
           alt="Third Slide"
-        /> -->
+        />
       </div>
       <div class="carousel-item">
         <!-- <img
