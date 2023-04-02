@@ -34,32 +34,32 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img
+        <!-- <img
           src="~\src\assets\NIKO-TAB.jpg"
           class="d-block w-100"
           alt="First Slide"
-        />
+        /> -->
       </div>
       <div class="carousel-item">
-        <img
+        <!-- <img
           src="~\src\assets\onlinelogomaker-032823-2139-0736.png"
           class="d-block w-100"
           alt="Second Slide"
-        />
+        /> -->
       </div>
       <div class="carousel-item">
-        <img
+        <!-- <img
           src="~\src\assets\onlinelogomaker-032823-2139-0736.png"
           class="d-block w-100"
           alt="Third Slide"
-        />
+        /> -->
       </div>
       <div class="carousel-item">
-        <img
+        <!-- <img
           src="~\src\assets\onlinelogomaker-032823-2139-0736.png"
           class="d-block w-100"
           alt="Fourth Slide"
-        />
+        /> -->
       </div>
 
     </div>
