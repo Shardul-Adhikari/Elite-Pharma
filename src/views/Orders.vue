@@ -248,7 +248,7 @@
                           <div class="sub-price">
                             <small>SUBTOTAL</small>
                             <span class="text-inverse"
-                              >{{ productdata.total - 7 }} Rupees</span
+                              >{{ productdata.total - 100 }} Rupees</span
                             >
                           </div>
                           <div class="sub-price">
