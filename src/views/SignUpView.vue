@@ -1,12 +1,12 @@
 <template>
   <div
     class="vh-100 d-flex justify-content-center align-items-center"
-    style="background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% );"
+    style="background-color:#F0F8FE"
   >
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
-          <div class="card bg-white">
+          <div class="card bg-white" style="background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% );">
             <div class="card-body p-5">
               <form class="mb-3 mt-md-4" @submit.prevent="signupUser">
                 <h2

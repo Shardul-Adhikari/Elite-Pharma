@@ -92,7 +92,7 @@
         <br />
         <br />
         <router-link to="/products">
-          <img src="../assets/icons8_back_64px.png" style="height: 37px" />
+          <img src="/assets/icons8_back_64px.png" style="height: 37px" />
         </router-link>
         <a style="width: auto"> Continue shopping </a>
       </div>

@@ -55,11 +55,11 @@
         />
       </div>
       <div class="carousel-item">
-        <!-- <img
-          src="~\src\assets\onlinelogomaker-032823-2139-0736.png"
+        <img
+          src="/assets/carousel 4.png"
           class="d-block w-100"
           alt="Fourth Slide"
-        /> -->
+        />
       </div>
 
     </div>

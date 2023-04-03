@@ -15,18 +15,18 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="\assets\sinex.png" class="card-img-top" alt="..." />
+          <img src="/assets/sinex.png" class="card-img-top" alt="..." />
         </div>
       </div>
       <div class="col">
         <div class="card">
-          <img src="\assets\digene tab.png" class="card-img-top" alt="..." />
+          <img src="/assets/digene tab.png" class="card-img-top" alt="..." />
         </div>
       </div>
       <div class="col">
         <div class="card">
           <img
-            src="\assets\betadin wound.jpg"
+            src="/assets/betadin wound.jpg"
             class="card-img-top"
             alt="..."
           />
@@ -35,7 +35,7 @@
       <div class="col">
         <div class="card">
           <img
-            src="ffyp\src\assets\vitamin b complex.jpg"
+            src="/assets/vitamin b complex.jpg"
             class="card-img-top"
             alt="..."
           />
@@ -44,7 +44,7 @@
       <div class="col">
         <div class="card">
           <img
-            src="ffyp\src\assets\digene syrup.png"
+            src="/assets/digene syrup.png"
             class="card-img-top"
             alt="..."
           />
@@ -53,7 +53,7 @@
       <div class="col">
         <div class="card">
           <img
-            src="ffyp\src\assets\niko syrup.jpg"
+            src="/assets/niko syrup.jpg"
             class="card-img-top"
             alt="..."
           />

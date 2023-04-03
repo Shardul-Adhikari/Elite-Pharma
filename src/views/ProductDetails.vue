@@ -62,7 +62,7 @@
                 <div class="r" style="display: flex; margin: auto">
                   <span class="fw-bold">Status: </span>
                   <img
-                    src="../assets/icons8_done_48px.png"
+                    src="/assets/icons8_done_48px.png"
                     style="margin-left: 15px; width: 23px"
                   />
                   <span id="exampleModalLabel" />
@@ -136,7 +136,7 @@
           <div class="modal-header" style="background: #242121; color: white">
             <div class="r" style="display: flex; margin: auto">
               <img
-                src="../assets/icons8_Done_64px_1.png"
+                src="/assets/icons8_Done_64px_1.png"
                 style="height: 31px"
               />
               <h5 class="modal-title" id="exampleModalLabel">

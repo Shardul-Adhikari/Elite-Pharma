@@ -1,6 +1,6 @@
 <template>
-  <div class="footer" style="background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% )">
-    <div class="container" style="background-image: linear-gradient( 181.2deg,  rgba(181,239,249,1) 10.5%, rgba(254,254,254,1) 86.8% );">
+  <div class="footer" style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% )">
+    <div class="container" style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );">
       <footer class="py-5" style="padding-bottom: 1rem !important ">
         <div class="row">
           <div class="col-md-5 links footer_block">
@@ -52,7 +52,7 @@
                 <button
                   class="btn btn-primary"
                   type="button"
-                  style="height: 38px; background-image: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% )"
+                  style="height: 38px; background-color: #BE3455;"
                 >
                   Subscribe
                 </button>

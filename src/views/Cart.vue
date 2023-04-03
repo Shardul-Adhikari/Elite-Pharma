@@ -73,7 +73,7 @@
                         <img
                           class="mb-0"
                           style="height: 25px"
-                          src="../assets/icons8_close_50px.png"
+                          src="/assets/icons8_close_50px.png"
                           @click="removeFromCart(item)"
                         />
                       </td>
@@ -161,7 +161,7 @@
               <br />
               <router-link to="/products">
                 <img
-                  src="../assets/icons8_back_64px.png"
+                  src="/assets/icons8_back_64px.png"
                   style="height: 37px"
                 />
               </router-link>
@@ -185,7 +185,7 @@
           <div class="modal-header" style="background: #242121; color: white">
             <div class="r" style="display: flex; margin: auto">
               <img
-                src="../assets/icons8_Done_64px_1.png"
+                src="/assets/icons8_Done_64px_1.png"
                 style="height: 31px"
               />
               <h5 class="modal-title" id="exampleModalLabel">
@@ -197,7 +197,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../assets/time-check-symbol_ready_timer_checkmark_countdown_compliance_done_reminder-512.webp"
+                  src="/assets/time-check-symbol_ready_timer_checkmark_countdown_compliance_done_reminder-512.webp"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
