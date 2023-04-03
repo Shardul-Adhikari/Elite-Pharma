@@ -31,7 +31,7 @@
             <div class="card-body">
               <div class="clearfix mb-3">
                 <span class="float-start badge rounded-pill bg-success"
-                  >{{ item.price }}DT</span
+                  >{{ item.price }}Rupees</span
                 >
 
                 <span class="float-end"

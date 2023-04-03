@@ -35,13 +35,13 @@
                 <tr v-for="cartitem in item.cart" :key="cartitem.name">
                   <td>{{ cartitem.name }}</td>
                   <td>{{ cartitem.quantity }}</td>
-                  <td>{{ cartitem.totalPrice }} DT</td>
+                  <td>{{ cartitem.totalPrice }} Rupees</td>
                 </tr>
                 <tr>
                   <td colspan="2" class="table-active">
                     Total Price (shipping included)
                   </td>
-                  <td>{{ item.total }} DT</td>
+                  <td>{{ item.total }} Rupees</td>
                 </tr>
               </tbody>
             </table>
@@ -179,7 +179,7 @@
                   <!-- begin invoice-company -->
 
                   <div class="row align-items-start">
-                    <div class="col">SelDig, Inc</div>
+                    <div class="col">Elite Pharma, Inc</div>
                   </div>
                   <!-- end invoice-company -->
                   <!-- begin invoice-header -->
@@ -187,9 +187,9 @@
                     <div class="invoice-from">
                       <small>from</small>
                       <address class="m-t-5 m-b-5">
-                        <strong class="text-inverse">SelDig, Inc.</strong><br />
-                        Address: Ouerghech, Ghardimaou<br />
-                        Phone: (+216) 54 819 819
+                        <strong class="text-inverse">Elite Pharma,Inc.</strong><br />
+                        Address: Old Baneshwor, Kathmandu<br />
+                        Phone: (+977) 01-4592773 
                       </address>
                     </div>
                     <div class="invoice-to">
@@ -200,11 +200,11 @@
                         }}</strong
                         ><br />
                         Address: {{ productdata.address }}<br />
-                        Phone: (+216) {{ productdata.number }}
+                        Phone: (+977) {{ productdata.number }}
                       </address>
                     </div>
                     <div class="invoice-date">
-                      <small>Invoice / July period</small>
+                      <small>Invoice / April period</small>
                       <div class="date text-inverse m-t-5">
                         {{ productdata.date }}
                       </div>
@@ -233,9 +233,9 @@
                               ><br />
                               <small>{{ item.brand }}</small>
                             </td>
-                            <td class="text-center">{{ item.price }} DT</td>
+                            <td class="text-center">{{ item.price }} Rupees</td>
                             <td class="text-center">{{ item.quantity }}</td>
-                            <td class="text-right">{{ item.totalPrice }} DT</td>
+                            <td class="text-right">{{ item.totalPrice }} Rupees</td>
                           </tr>
                         </tbody>
                       </table>
@@ -248,7 +248,7 @@
                           <div class="sub-price">
                             <small>SUBTOTAL</small>
                             <span class="text-inverse"
-                              >{{ productdata.total - 7 }} DT</span
+                              >{{ productdata.total - 7 }} Rupees</span
                             >
                           </div>
                           <div class="sub-price">
@@ -256,13 +256,13 @@
                           </div>
                           <div class="sub-price">
                             <small>SHIPPING</small>
-                            <span class="text-inverse">7 DT</span>
+                            <span class="text-inverse">100 Rupees</span>
                           </div>
                         </div>
                       </div>
                       <div class="invoice-price-right">
                         <small>TOTAL</small>
-                        <span class="f-w-600">{{ productdata.total }} DT</span>
+                        <span class="f-w-600">{{ productdata.total }} Rupees</span>
                       </div>
                     </div>
                     <!-- end invoice-price -->
@@ -270,10 +270,10 @@
                   <!-- end invoice-content -->
                   <!-- begin invoice-note -->
                   <div class="invoice-note">
-                    * Make all cheques payable to SelDig<br />
+                    * Make all cheques payable to Elite Pharma<br />
                     * Payment is due within 30 days<br />
                     * If you have any questions concerning this invoice, contact
-                    contact@rani4tech.com
+                    sharduladhikaridv@gmail.com
                   </div>
                   <!-- end invoice-note -->
                   <!-- begin invoice-footer -->
@@ -284,15 +284,15 @@
                     <p class="text-center">
                       <span class="m-r-10"
                         ><i class="fa fa-fw fa-lg fa-globe"></i>
-                        www.rani4tech.com</span
+                        www.sharduladhikari.com</span
                       >
                       <span class="m-r-10"
                         ><i class="fa fa-fw fa-lg fa-phone-volume"></i>
-                        T:216-99548790</span
+                        T: 9861606126</span
                       >
                       <span class="m-r-10"
                         ><i class="fa fa-fw fa-lg fa-envelope"></i>
-                        ranizouaouicontact@gmail.com</span
+                        sharduladhikaridv</span
                       >
                     </p>
                   </div>
