@@ -13,9 +13,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <router-link to="/"
-        ><img src="../assets/dark-logo.png" width="120" height="40"
-      /></router-link> -->
+       <router-link to="/"
+        ><img src="/assets/EP-removebg-preview.png" width="75" height="75"
+      /></router-link> 
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul
@@ -36,6 +36,19 @@
                   >Products</router-link
                 >
               </li>
+              <!--  -->
+              <li class="nav-item">
+                <router-link class="nav-link" to="/UploadPescription"
+                  >Upload Prescription</router-link
+                >
+              </li>
+              <!--  -->
+              <li class="nav-item">
+                <router-link class="nav-link" to="/ProductReturn"
+                  >Product Return</router-link
+                >
+              </li>
+              <!--  -->
               <li class="nav-item">
                 <router-link class="nav-link" v-if="CheckAuth" to="/myproducts"
                   >My Products</router-link
@@ -111,6 +124,13 @@ export default {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         this.CheckAuth = user;
+      } else {
+        this.CheckAuth = null;
+      }
+    });
+    onAuthStateChanged(auth, (admin) => {
+      if (admin) {
+        this.CheckAuth = admin;
       } else {
         this.CheckAuth = null;
       }

@@ -7,21 +7,25 @@
         <div class="card">
           <img src="/assets/NIKO-TAB.jpg" class="card-img-top" alt="..." />
         </div>
+        <h5>Paracetamol Tablets </h5>
       </div>
       <div class="col">
         <div class="card">
           <img src="/assets/decold.jpg" class="card-img-top" alt="..." />
         </div>
+        <h5>Decold Tablets</h5>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" style="height: 18.5rem">
           <img src="/assets/sinex.png" class="card-img-top" alt="..." />
         </div>
+        <h5>Sinex Tablets</h5>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" style="height: 18.5rem">
           <img src="/assets/digene tab.png" class="card-img-top" alt="..." />
         </div>
+        <h5>Digene Tablets</h5>
       </div>
       <div class="col">
         <div class="card">
@@ -31,6 +35,7 @@
             alt="..."
           />
         </div>
+        <h5>Betadin Wound Solution</h5>
       </div>
       <div class="col">
         <div class="card">
@@ -40,6 +45,7 @@
             alt="..."
           />
         </div>
+        <h5>Polybion SF Syrup</h5>
       </div>
       <div class="col">
         <div class="card">
@@ -49,6 +55,7 @@
             alt="..."
           />
         </div>
+        <h5>Digene Syrup</h5>
       </div>
       <div class="col">
         <div class="card">
@@ -58,6 +65,7 @@
             alt="..."
           />
         </div>
+        <h5>Niko Syrup</h5>
       </div>
     </div>
   </div>

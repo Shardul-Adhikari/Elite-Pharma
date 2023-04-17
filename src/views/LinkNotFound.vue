@@ -23,7 +23,8 @@
     </button>
   </div>
 </template>
-// <script>
+
+<script>
 import router from "../router";
 export default {
   name: "LinkNotFound",

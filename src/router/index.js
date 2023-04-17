@@ -9,16 +9,19 @@ import MyProductsView from '../views/MyProductsView'
 import ProductDetails from '../views/ProductDetails'
 import LinkNotFound from '../views/LinkNotFound'
 import LoginView from '../views/LoginView'
+import UploadPrescription from '../views/UploadPrescription'
+import ProductReturn from '../views/ProductReturn'
 
 const auth = getAuth();
 const user = () => {
   return new Promise((resolve, reject) => {
-    const unsubscribe = onAuthStateChanged(auth, (userFirebase) => {
+    const unsubscribe = onAuthStateChanged(auth, (userFirebase, admin ) => {
       unsubscribe()
-      resolve(userFirebase)
+      resolve(userFirebase, admin)
     }, reject)
 
   })
+  
 };
 
 const routes = [
@@ -27,6 +30,11 @@ const routes = [
     name: 'home',
     component: Home,
   },
+  // {
+  //   path: '/admin',
+  //   name: 'home',
+  //   component: Home,
+  // },
   {
     path: '/signin',
     name: 'signin',
@@ -97,7 +105,24 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: '/UploadPrescription',
+    name: 'UploadPrescription',
+    component: UploadPrescription,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/ProductReturn',
+    name: 'ProductReturn',
+    component: ProductReturn,
+    meta: {
+      requiresAuth: true
+    }
   }
+
 ]
 
 const router = createRouter({
@@ -114,4 +139,10 @@ router.beforeEach(async (to, from, next) => {
   } else {
     next();
   }
+  // if (requiresAuth && !await admin()) {
+  //   next('signin');
+  // } else {
+  //   next();
+  // }
 });
+

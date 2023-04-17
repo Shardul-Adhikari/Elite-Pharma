@@ -276,7 +276,7 @@
               .
               <!-- form start here -->
               <form>
-                <h3>Do you want to delete this course ?</h3>
+                <h3>Do you want to delete this product?</h3>
                 <br />
                 <h5>Title: {{ dataProduct.name }}</h5>
               </form>

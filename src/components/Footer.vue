@@ -1,7 +1,7 @@
 <template>
   <div class="footer" style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% )">
     <div class="container" style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );">
-      <footer class="py-5" style="padding-bottom: 1rem !important ">
+      <footer class="py-5" style="padding-bottom: 1.5rem !important ">
         <div class="row">
           <div class="col-md-5 links footer_block">
             <!-- <img src="../assets/logo.webp" height="50 px" width="160px" /> -->
