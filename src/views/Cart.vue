@@ -94,7 +94,7 @@
                       style="font-weight: 500"
                     >
                       <p class="mb-2">Subtotal</p>
-                      <p class="mb-2">{{ totalPrice - 7 }} Rupees</p>
+                      <p class="mb-2">{{ totalPrice - 100 }} Rupees</p>
                     </div>
 
                     <div
@@ -329,7 +329,7 @@ export default {
       for (let item of this.$store.state.cart) {
         total += item.totalPrice;
       }
-      total = total + 7;
+      total = total + 100;
       return total.toFixed(2);
     },
   },

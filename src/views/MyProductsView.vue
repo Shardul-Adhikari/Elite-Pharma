@@ -60,6 +60,7 @@
                       item.price,
                       item.description,
                       item.image,
+                      item.category,
                       item.key
                     )
                   "
@@ -156,14 +157,13 @@
                   v-model="product.description"
                 ></textarea>
                  <!-- Categories -->
-                <div class="dropdown mt-3">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="category-dropdown" data-bs-toggle="dropdown">
-                    Choose a Category
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="category-dropdown">
-                    <li><a href="#" class="dropdown-item"> Prescribed</a></li>
-                    <li><a href="#" class="dropdown-item"> Un-Prescribed</a></li>
-                  </ul>
+                 <div class="dropdown mt-3">
+                   <form >
+                    <input type="radio" id="Prescribed" name="category" value="prescribed" v-model="dataProduct.category">
+                    <label for="Prescribed">Prescribed</label><br>
+                    <input type="radio" id="Unprescribed" name="category" value="unprescribed" v-model="dataProduct.category">
+                    <label for="Unprescribed">Unprescribed</label><br>
+                   </form>
                 </div>
                 <!--  -->
                 <div class="alert alert-success" v-if="messageSuccess">
@@ -211,6 +211,7 @@
             <div class="modal-body">
               .
               <!-- form start here -->
+              <pre>{{dataProduct}}</pre>
               <form @submit.prevent="UpdateProduct">
                 <input
                   class="form-control"
@@ -243,13 +244,12 @@
                 />
                 <!-- Categories -->
                 <div class="dropdown mt-3">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="category-dropdown" data-bs-toggle="dropdown">
-                    Choose a Category
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="category-dropdown">
-                    <li><a href="#" class="dropdown-item"> Prescribed</a></li>
-                    <li><a href="#" class="dropdown-item"> Un-Prescribed</a></li>
-                  </ul>
+                   <form >
+                    <input type="radio" id="Prescribed" name="category" value="prescribed" v-model="dataProduct.category">
+                    <label for="Prescribed">Prescribed</label><br>
+                    <input type="radio" id="Unprescribed" name="category" value="unprescribed" v-model="dataProduct.category">
+                    <label for="Unprescribed">Unprescribed</label><br>
+                   </form>
                 </div>
                 <div class="alert alert-success" v-if="messageUpdateSuccess">
                   {{ messageUpdateSuccess }}
