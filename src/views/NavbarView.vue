@@ -38,7 +38,7 @@
               </li>
               <!--  -->
               <li class="nav-item">
-                <router-link class="nav-link" to="/UploadPescription"
+                <router-link class="nav-link" to="/UploadPrescription"
                   >Upload Prescription</router-link
                 >
               </li>

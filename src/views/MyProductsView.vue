@@ -155,6 +155,17 @@
                   placeholder="Description"
                   v-model="product.description"
                 ></textarea>
+                 <!-- Categories -->
+                <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="category-dropdown" data-bs-toggle="dropdown">
+                    Choose a Category
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="category-dropdown">
+                    <li><a href="#" class="dropdown-item"> Prescribed</a></li>
+                    <li><a href="#" class="dropdown-item"> Un-Prescribed</a></li>
+                  </ul>
+                </div>
+                <!--  -->
                 <div class="alert alert-success" v-if="messageSuccess">
                   {{ messageSuccess }}
                 </div>
@@ -230,6 +241,16 @@
                   aria-label="default input example"
                   v-model="dataProduct.price"
                 />
+                <!-- Categories -->
+                <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="category-dropdown" data-bs-toggle="dropdown">
+                    Choose a Category
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="category-dropdown">
+                    <li><a href="#" class="dropdown-item"> Prescribed</a></li>
+                    <li><a href="#" class="dropdown-item"> Un-Prescribed</a></li>
+                  </ul>
+                </div>
                 <div class="alert alert-success" v-if="messageUpdateSuccess">
                   {{ messageUpdateSuccess }}
                 </div>
@@ -303,7 +324,7 @@
         </div>
       </div>
     </div>
-</router-view>
+  </router-view>
 </template>
 
 <script>
@@ -341,6 +362,7 @@ export default {
         image: "",
         description: "",
         brand: "",
+        category: "",
         uid: localStorage.getItem("uidUser"),
       },
       dataProduct: {
@@ -349,6 +371,7 @@ export default {
         image: "",
         brand: "",
         description: "",
+        category: "",
         key: "",
       },
       messageSuccess: "",
@@ -375,14 +398,16 @@ export default {
         this.product.image = "";
         this.product.brand = "";
         this.product.description = "";
+        this.product.category = "";
       });
     },
-    getData(name, brand, price, description, image, key) {
+    getData(name, brand, price, description, image,category, key) {
       this.dataProduct.name = name;
       this.dataProduct.brand = brand;
       this.dataProduct.price = price;
       this.dataProduct.description = description;
       this.dataProduct.image = image;
+      this.dataProduct.category = category;
       this.dataProduct.key = key;
     },
     getDataKey(key, name) {
@@ -399,6 +424,7 @@ export default {
         this.dataProduct.price = "";
         this.dataProduct.image = "";
         this.dataProduct.description = "";
+        this.dataProduct.category = "";
       });
     },
     DeleteProduct(key) {
@@ -454,6 +480,7 @@ export default {
             description: doc.data().description,
             price: doc.data().price,
             image: doc.data().image,
+            category: doc.data().category,
             quantity: 1,
             totalPrice: doc.data().price,
           });

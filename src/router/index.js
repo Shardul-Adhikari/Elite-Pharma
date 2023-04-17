@@ -19,9 +19,21 @@ const user = () => {
       unsubscribe()
       resolve(userFirebase, admin)
     }, reject)
-
   })
-  
+// };
+
+// const admin = () => {
+//   return new Promise((resolve, reject) => {
+//     const unsubscribe = onAuthStateChanged(auth, (userFirebase, admin ) => {
+//       unsubscribe()
+//       if (admin.role=="admin"){
+//         resolve(userFirebase, admin)
+
+//       }else{
+//         reject
+//       }
+//     }, reject)
+//   })
 };
 
 const routes = [
@@ -60,6 +72,7 @@ const routes = [
     name: 'myproducts',
     component: MyProductsView,
     meta: {
+      // requiresAdmin: true
       requiresAuth: true
     }
   },
@@ -134,15 +147,19 @@ export default router
 
 router.beforeEach(async (to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
-  if (requiresAuth && !await user()) {
-    next('signin');
-  } else {
-    next();
-  }
-  // if (requiresAuth && !await admin()) {
-  //   next('signin');
-  // } else {
+  // const requiresAdmin = to.matched.some(record => record.meta.requiresAdmin);
+  // if (requiresAdmin && await admin()) {
   //   next();
+  // } else {
+    if (requiresAuth && !await user()) {
+      next('signin');
+    } else {
+      next();
+    }
   // }
+
+
+
+  
 });
 

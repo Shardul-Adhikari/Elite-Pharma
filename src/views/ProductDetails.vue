@@ -210,6 +210,7 @@ export default {
         description: "",
         price: "",
         image: "",
+        category: "",
         quantity: 1,
         totalPrice: "",
       },
@@ -242,6 +243,7 @@ export default {
           this.product.price = doc.data().price;
           this.product.description = doc.data().description;
           this.product.image = doc.data().image;
+          this.product.category = doc.data().category;
           this.product.key = doc.id;
           this.product.quantity = 1;
           this.product.totalPrice = doc.data().price;

@@ -59,6 +59,7 @@
                           item.price,
                           item.description,
                           item.image,
+                          item.category,
                           item.key
                         )
                     "
@@ -199,6 +200,7 @@ export default {
         image: "",
         brand: "",
         description: "",
+        category: "",
         key: "",
       },
       products: [],
@@ -245,6 +247,7 @@ export default {
           description: doc.data().description,
           price: doc.data().price,
           image: doc.data().image,
+          category: doc.data().category,
           quantity: 1,
           totalPrice: doc.data().price,
         });
@@ -271,12 +274,13 @@ export default {
     addToCart(item) {
       this.$store.commit("addToCart", item);
     },
-    getData(name, brand, price, description, image, key) {
+    getData(name, brand, price, description, image,category, key) {
       this.dataProduct.name = name;
       this.dataProduct.brand = brand;
       this.dataProduct.price = price;
       this.dataProduct.description = description;
       this.dataProduct.image = image;
+      this.dataProduct.category = category;
       this.dataProduct.key = key;
     },
     Gotocart() {
@@ -307,6 +311,7 @@ export default {
             description: doc.data().description,
             price: doc.data().price,
             image: doc.data().image,
+            category: doc.data().category,
             quantity: 1,
             totalPrice: doc.data().price,
           });
@@ -369,6 +374,7 @@ export default {
               description: doc.data().description,
               price: doc.data().price,
               image: doc.data().image,
+              category: doc.data().category,
               quantity: 1,
               totalPrice: doc.data().price,
             });
@@ -426,6 +432,7 @@ export default {
               description: doc.data().description,
               price: doc.data().price,
               image: doc.data().image,
+              category: doc.data().category,
               quantity: 1,
               totalPrice: doc.data().price,
             });
@@ -476,6 +483,7 @@ export default {
                 description: doc.data().description,
                 price: doc.data().price,
                 image: doc.data().image,
+                category: doc.data().category,
                 quantity: 1,
                 totalPrice: doc.data().price,
               });
