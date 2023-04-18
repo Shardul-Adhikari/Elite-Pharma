@@ -160,10 +160,7 @@
               <br />
               <br />
               <router-link to="/products">
-                <img
-                  src="/assets/icons8_back_64px.png"
-                  style="height: 37px"
-                />
+                <img src="/assets/icons8_back_64px.png" style="height: 37px" />
               </router-link>
               <a style="width: auto"> Continue shopping </a>
             </div>
@@ -184,10 +181,7 @@
         <div class="modal-content" style="border: black">
           <div class="modal-header" style="background: #242121; color: white">
             <div class="r" style="display: flex; margin: auto">
-              <img
-                src="/assets/icons8_Done_64px_1.png"
-                style="height: 31px"
-              />
+              <img src="/assets/icons8_Done_64px_1.png" style="height: 31px" />
               <h5 class="modal-title" id="exampleModalLabel">
                 Order will be processed
               </h5>
@@ -197,7 +191,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="/assets/time-check-symbol_ready_timer_checkmark_countdown_compliance_done_reminder-512.webp"
+                  src="/assets/clock.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -209,6 +203,10 @@
                 >
                   Your order will be processed !
                 </p>
+                <img
+                  src="/assets/QR-Scan.jpg"
+                  alt="..." class="QR-SCAN"
+                />
               </div>
             </div>
           </div>
@@ -238,7 +236,7 @@
         <div class="modal-content" style="border: black">
           <div class="modal-header" style="background: #242121; color: white">
             <div class="r" style="display: flex; margin: auto">
-              <!-- <img src="../assets/icons8_close_26px.png" style="height: 31px" /> -->
+              <img src="/assets/icons8_close_26px.png" style="height: 31px" />
               <h5 class="modal-title" id="exampleModalLabel">
                 You need to authentificate first
               </h5>
@@ -247,11 +245,11 @@
           <div class="modal-body" style="display: flex">
             <div class="row g-0">
               <div class="col-md-4">
-                <!-- <img
-                src="../assets/R.png"
-                class="img-fluid rounded-start"
-                alt="..."
-              /> -->
+                <img
+                  src="/assets/profile icon check.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
               </div>
               <div class="col">
                 <p class="card-text" style="margin: revert; margin-left: 29px">
@@ -387,3 +385,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .QR-SCAN{
+    width: 400px;
+    height:400px;
+  }
+</style>

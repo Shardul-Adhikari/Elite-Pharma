@@ -4,7 +4,7 @@
       <footer class="py-5" style="padding-bottom: 1.5rem !important ">
         <div class="row">
           <div class="col-md-5 links footer_block">
-            <!-- <img src="../assets/logo.webp" height="50 px" width="160px" /> -->
+            <img src="/assets/EP-removebg-preview.png" height="160 px" width="160px" />
             <br />
 
             <p>
